@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Roboto", "sans-serif";
+}
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  background-color: #000;
+}
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: 12px;
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  width: 90%;
+  height: 60px;
+  font-size: 23px;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #e6f5fb;
+  padding: 12px 16px;
+  border-radius: 20px;
+}
+.search-box input::placeholder {
+  color: #000;
+}
+.search-box button {
+  background-color: #e6f5fb;
+  height: 55px;
+  border-radius: 50%;
+  width: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.search-box button:hover {
+  color: #fff;
+  background-color: gray;
+  transform: scale(0.9);
+}
+.weather {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.weather-img {
+  width: 60%;
+}
+.weather-box {
+  margin: 20px 0;
+  text-align: center;
+}
+.tmp {
+  font-size: 30px;
+  font-weight: bolder;
+  position: relative;
+}
+.condition {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.humidity,
+.wind-speed {
+  display: flex;
+  align-items: center;
+}
+.humidity {
+  margin-left: 20px;
+}
+.wind-speed {
+  margin-right: 20px;
+}
+.weather-details i {
+  font-size: 36px;
+}
+.weather-details .text {
+  margin-left: 10px;
+}
+.text span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.weather-details p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.location-not-found {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location-not-found h1 {
+  margin-top: 20px;
+  color: gray;
+  margin-left: 10px;
+}
+.location-not-found img {
+  width: 80%;
+  margin: 20px 0;
+}

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Delicious+Handrawn&family=Port+Lligat+Sans&family=Roboto:wght@300&display=swap");
+
+body {
+  margin: 0;
+  background: linear-gradient(to left, #ffd89b, #19547b);
+  font-family: "Port Lligat Sans", sans-serif;
+}
+.heading {
+  color: #02111b;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 35px;
+}
+.info-text {
+  text-align: center;
+  color: #02111b;
+  font-size: 18px;
+}
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+  justify-content: center;
+  padding: 50px;
+}
+.note {
+  padding: 17px;
+  border-radius: 15px;
+  resize: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  height: 200px;
+  color: #02111b;
+  font-family: "Port Lligat Sans", sans-serif;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-sizing: border-box;
+}
+.note::placeholder {
+  opacity: 90%;
+}
+.note:hover,
+.note:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.btn {
+  height: 200px;
+  border-radius: 15px;
+  border-color: rgba(255, 255, 255, 0.37);
+  background: rgba(255, 255, 255, 0.37);
+  outline: none;
+  font-size: 80px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.btn:hover {
+    background:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.29);
+    transform: all 0.3s ease;
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lora&family=Love+Ya+Like+A+Sister&family=Poppins&family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+  background: linear-gradient(to left top, yellow, lightblue, yellow);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkcyan;
+  font-family: "Love Ya Like A Sister", "cursive";
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 85%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.time {
+  font-size: 25px;
+  color: blue;
+  letter-spacing: 5px;
+  font-style: italic;
+}
+.container button {
+  width: 50%;
+  height: 30px;
+  background: #494eea;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 500;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  transition: all 0.3s ease;
+  padding: auto;
+  margin: 10px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container button:active {
+  transform: scale(0.8);
+}

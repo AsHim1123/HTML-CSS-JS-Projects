@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Creepster", cursive;
+  color: #000046;
+}
+.container {
+  background: rgba(255, 255, 255, 0.17);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading p {
+  font-size: 2.5rem;
+  font-weight: 540;
+  font-style: oblique;
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+}
+button {
+  border: 0;
+  outline: none;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background: #372da6;
+  display: flex;
+  color: #9e9a9a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  opacity: 0.5;
+}
+button:active {
+  transform: scale(0.7);
+}
+.input {
+  width: 50%;
+  height: 20px;
+  border: 1px solid #494eea;
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0 20px;
+  font-size: 20px;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  text-align: center;
+}
+.input::placeholder {
+  color: #24243e;
+  opacity: 0.7;
+}
+#guess-low-high,
+#guessed-number,
+#total-number-guesses {
+  font-size: 1.5rem;
+}
+.result span {
+  color: #05021d;
+  font-weight: 900;
+}
+.result #error {
+  font-size: 1.5rem;
+  text-align: center;
+}

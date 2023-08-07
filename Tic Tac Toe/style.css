@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Sedgwick+Ave+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif";
+}
+
+.game-container {
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skeleton-container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vh);
+  grid-template-rows: repeat(3, 10vh);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  max-width: 270px;
+  width: 65%;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bl {
+  border-left: 0;
+}
+
+.bb {
+  border-bottom: 0;
+}
+
+.br {
+  border-right: 0;
+}
+
+.bt {
+  border-top: 0;
+}
+
+.box:hover {
+  background-color: #7a8b99;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.turn-container {
+  margin-right: 10px;
+}
+
+.turn {
+  font-size: 40px;
+  font-family: "Sedgwick Ave Display", cursive;
+  margin-bottom: 10px;
+}
+
+.restart-container {
+  margin-left: 10px;
+}
+
+#btn {
+  background-color: #bdc3c7;
+  outline: none;
+  cursor: pointer;
+  border: 0.1px solid black;
+  padding: 13px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: -4px -4px 20px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #bdc3c7;
+}
+
+#btn:active {
+  transform: scale(0.9);
+}
